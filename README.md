@@ -11,8 +11,6 @@ The backend uses a **Random Forest Classifier** model trained on loan data, whic
 - [Requirements](#requirements-)
 - [Installation](#installation-)
 - [Usage](#usage-)
-- [Code Explanation](#code-explanation-)
-- [Model Evaluation](#model-evaluation-optional)
 - [Project Structure](#project-structure-)
 - [Contributing](#contributing-)
 
@@ -122,8 +120,6 @@ This will start the server at `http://127.0.0.1:5000/`.
    - **Bank Asset Value**
 3. After filling in the form, click the **"Submit"** button.
 4. The application will predict the loan status and display whether the loan is **Approved** or **Rejected**.
-
-## Code Explanation 🧑‍💻
 
 ### Flask App:
 
