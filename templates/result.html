@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fafafa;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li strong {
+            color: #4CAF50;
+        }
+
+        .result {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .result.Approved {
+            background-color: #28a745;
+        }
+
+        .result.Rejected {
+            background-color: #dc3545;
+        }
+
+        .back-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Loan Approval Prediction Result</h2>
+    </header>
+
+    <div class="container">
+        <div class="result {{ 'Approved' if prediction_text == 'Loan Status: Approved' else 'Rejected' }}">
+            {{ prediction_text }}
+        </div>
+
+        <h3>Entered Information:</h3>
+        <ul>
+            <li><strong>Number of Dependents:</strong> <span>{{ no_of_dependents }}</span></li>
+            <li><strong>Education:</strong> <span>{{ education }}</span></li>
+            <li><strong>Self Employed:</strong> <span>{{ self_employed }}</span></li>
+            <li><strong>Annual Income:</strong> <span>{{ income_annum }}</span></li>
+            <li><strong>Loan Amount:</strong> <span>{{ loan_amount }}</span></li>
+            <li><strong>Loan Term:</strong> <span>{{ loan_term }}</span></li>
+            <li><strong>CIBIL Score:</strong> <span>{{ cibil_score }}</span></li>
+            <li><strong>Residential Assets Value:</strong> <span>{{ residential_assets_value }}</span></li>
+            <li><strong>Commercial Assets Value:</strong> <span>{{ commercial_assets_value }}</span></li>
+            <li><strong>Luxury Assets Value:</strong> <span>{{ luxury_assets_value }}</span></li>
+            <li><strong>Bank Asset Value:</strong> <span>{{ bank_asset_value }}</span></li>
+        </ul>
+
+    </div>
+</body>
+</html>
