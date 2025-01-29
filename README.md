@@ -127,6 +127,14 @@ This will start the server at `http://127.0.0.1:5000/`.
   1. **Home Route (`/`)**: Displays the loan prediction form.
   2. **Prediction Route (`/predict`)**: Receives the form data, processes it, and returns the loan prediction.
 
+## 🖼️ Screenshots
+Input:
+![App Screenshot](https://github.com/AdityaTagde/Loan_Approval_Prediction/blob/main/ip1.png)
+![App Screenshot](https://github.com/AdityaTagde/Loan_Approval_Prediction/blob/main/ip2.png)
+Output:
+![App Screenshot](https://github.com/AdityaTagde/Loan_Approval_Prediction/blob/main/op1.png)
+![App Screenshot](https://github.com/AdityaTagde/Loan_Approval_Prediction/blob/main/op2.png)
+
 ## Project Structure 📂
 
 ```
