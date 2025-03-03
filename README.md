@@ -67,7 +67,7 @@ pip install flask pandas numpy scikit-learn pickle-mixin
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/loan-approval-prediction.git
+git clone https://github.com/AdityaTagde/loan-approval-prediction.git
 cd loan-approval-prediction
 ```
 
